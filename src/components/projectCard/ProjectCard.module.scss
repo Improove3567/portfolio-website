@@ -1,0 +1,65 @@
+$bacgrkound: #fafafa;
+$textColor: #555;
+$textColorHover: #facf0f;
+$titleColor: #333;
+
+.wrapper {
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem;
+    width: 100%;
+    width: 80%;
+    height: 50vh;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aboutProject {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    h2 {
+        font-weight: 700;
+        color: $titleColor;
+    }
+
+    p {
+        width: 75%;
+        color: $textColor;
+
+    }
+
+    a {
+        width: 35%;
+        height: 20%;
+        background: $textColorHover;
+        color: $textColor;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        display: inline-block;
+        font-weight: 800;
+        border-radius: 5px;
+        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .15);
+        transition: transform .3s;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a:hover {
+        transform: translateY(-3px);
+    }
+}
