@@ -4,15 +4,23 @@ $textColorHover: #facf0f;
 $titleColor: #333;
 
 .wrapper {
-    padding-top: 20vh;
-    padding-bottom: 10vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10rem;
-    width: 100%;
     width: 80%;
     height: 50vh;
     margin: 0 auto;
+
+    .imgContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    img {
+        width: 100%;
+
+    }
 }
 
 .content {
@@ -47,7 +55,7 @@ $titleColor: #333;
         text-transform: uppercase;
         letter-spacing: 1px;
         display: inline-block;
-        font-weight: 800;
+        font-weight: 600;
         border-radius: 5px;
         box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .15);
         transition: transform .3s;
@@ -61,5 +69,46 @@ $titleColor: #333;
 
     a:hover {
         transform: translateY(-3px);
+    }
+}
+
+@media(max-width: 1440px) {
+    .aboutProject {
+        height: 80%;
+
+        h2 {
+            font-weight: 600;
+            font-size: 30px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        a {
+            height: 20%;
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    .aboutProject {
+        height: 80%;
+
+        h2 {
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 12px;
+        }
+
+        a {
+            height: 10%;
+            font-size: 12px;
+        }
     }
 }

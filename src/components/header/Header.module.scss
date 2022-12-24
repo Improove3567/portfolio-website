@@ -56,3 +56,9 @@ $textColorHover: #facf0f;
 
     }
 }
+
+@media(max-width: 1024px){
+    p, li {
+        font-size: 13px;
+    }
+}

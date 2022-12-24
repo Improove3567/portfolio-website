@@ -121,3 +121,32 @@ $titleColor: #111;
         }
     }
 }
+
+@media(max-width: 1024px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    .mainTextBlock {
+        h1 {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+    .aboutBlock {
+
+        p {
+            font-size: 12px;
+        }
+
+        button {
+            height: 30px;
+            font-size: 12px;
+        }
+    }
+
+}

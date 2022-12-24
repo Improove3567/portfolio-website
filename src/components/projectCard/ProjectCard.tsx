@@ -14,7 +14,9 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ id, img, title, mainText, btnText, puth }) => {
     return (
         <div className={style.wrapper} key={id}>
-            <img src={img} alt='project-img' />
+            <div className={style.imgContainer}>
+                <img src={img} alt='project-img' />
+            </div>
             <div className={style.content}>
                 <div className={style.aboutProject}>
                     <h2>{title}</h2>

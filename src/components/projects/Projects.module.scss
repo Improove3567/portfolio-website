@@ -41,3 +41,15 @@ $titleColor: #111;
         font-size: 18px;
     }
 }
+
+@media(max-width: 1024px) {
+    .wrapper {
+
+        h1{
+            font-size: 25px;
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+}
